@@ -1,0 +1,50 @@
+site_name: Lexi Drift Documentation
+site_url: https://lx-nexus.github.io/lx_drift/
+
+theme:
+  name: material
+  palette:
+    scheme: default
+
+  features:
+    - navigation.expand
+    - navigation.top
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow         
+    - toc.integrate     
+
+nav:
+  - Home: index.md
+  - UI Guide:
+      - 1. Introduction to Lexi: guide_split/1_introduction_to_lexi.md
+      - 2. Codebase Overview: guide_split/2_codebase_overview.md
+      - 3. UI Architecture with Flet: guide_split/3_ui_architecture_with_flet.md
+      - 4. Base64 for Images and Animations: guide_split/4_base64_for_images_and_animations.md
+      - 5. UI Development Guidelines: guide_split/5_ui_development_guidelines.md
+      - 6. Contribution Workflow: guide_split/6_contribution_workflow.md
+      - 7. Resources: guide_split/7_resources.md
+      - 8. Detailed UI Elements and Functionality: guide_split/8_detailed_ui_elements_and_functionality.md
+      - 9. Data Handling and `lexi_drift.pdf`: guide_split/9_data_handling_and_lexi_driftpdf.md
+
+  - Database Guide:
+      - 10. Database Implementation with SQLite3: guide_split/10_Database_Implementation_with_SQLite3.md
+      - 11. Considerations for the Database Developer: guide_split/11_Considerations_for_the_Database_Developer.md
+      
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.extra  
+  - attr_list        
+  - toc:
+      permalink: true   
+
+extra_css:
+  - stylesheets/extra.css
+use_directory_urls: false
+

@@ -1,0 +1,1079 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lx-nexus.github.io/lx_drift/guide_split/8_detailed_ui_elements_and_functionality.html">
+      
+      
+        <link rel="prev" href="7_resources.html">
+      
+      
+        <link rel="next" href="9_data_handling_and_lexi_driftpdf.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>8. Detailed UI Elements and Functionality - Lexi Drift Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8-detailed-ui-elements-and-functionality" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Lexi Drift Documentation" class="md-header__button md-logo" aria-label="Lexi Drift Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lexi Drift Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. Detailed UI Elements and Functionality
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Lexi Drift Documentation" class="md-nav__button md-logo" aria-label="Lexi Drift Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lexi Drift Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UI Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UI Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="1_introduction_to_lexi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Introduction to Lexi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2_codebase_overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2. Codebase Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_ui_architecture_with_flet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. UI Architecture with Flet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_base64_for_images_and_animations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Base64 for Images and Animations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_ui_development_guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. UI Development Guidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_contribution_workflow.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Contribution Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    8. Detailed UI Elements and Functionality
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="8_detailed_ui_elements_and_functionality.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    8. Detailed UI Elements and Functionality
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-initial-loading-and-download-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1. Initial Loading and Download Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-main-chat-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2. Main Chat Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-input-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3. Input Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-model-selection-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4. Model Selection Dialog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-information-dialog" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5. Information Dialog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-pdf-upload-and-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.6. PDF Upload and Processing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="9_data_handling_and_lexi_driftpdf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9. Data Handling and `lexi_drift.pdf`
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Database Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Database Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10_Database_Implementation_with_SQLite3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Database Implementation with SQLite3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="11_Considerations_for_the_Database_Developer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Considerations for the Database Developer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="8-detailed-ui-elements-and-functionality">8. Detailed UI Elements and Functionality<a class="headerlink" href="#8-detailed-ui-elements-and-functionality" title="Permanent link">&para;</a></h1>
+<p>Lexi's user interface is designed to be intuitive and functional, guiding the user through model interaction, PDF processing, and conversational AI. This section details the key UI components, their purpose, and relevant code snippets.</p>
+<h3 id="81-initial-loading-and-download-screen">8.1. Initial Loading and Download Screen<a class="headerlink" href="#81-initial-loading-and-download-screen" title="Permanent link">&para;</a></h3>
+<p>Upon launching Lexi, the application first checks for and downloads necessary AI models. This process is represented by a dynamic loading screen, ensuring the user is aware of the background operations.</p>
+<p><strong>Purpose:</strong> To provide visual feedback during the initial setup, model download, and loading phases, preventing the application from appearing unresponsive. It also informs the user about the progress of large file downloads.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li>
+<p><strong>Progress Bar (<code>ft.ProgressBar</code>)</strong>: Displays the overall download and loading progress. The <code>HfProgress</code> class customizes this to show Hugging Face model download progress.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from HfProgress class in Drift_mini.py</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">HfProgress</span><span class="p">(</span><span class="n">tqdm</span><span class="p">):</span>
+    <span class="c1"># ... (init and other methods)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1"># Calculate percentage</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">total</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">total</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">percentage</span> <span class="o">=</span> <span class="mf">100.0</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">total</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">percentage</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="c1"># Construct status message</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">total</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">status_msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Downloading: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">MB / </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">MB (</span><span class="si">{</span><span class="n">percentage</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">status_msg</span> <span class="o">=</span> <span class="s2">&quot;Downloading: calculating size...&quot;</span>
+
+        <span class="c1"># Update UI</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;screen&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">screen</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">is_cancelled</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">active</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">update_progress</span><span class="p">(</span>
+                    <span class="mi">40</span> <span class="o">+</span> <span class="p">(</span><span class="n">percentage</span> <span class="o">*</span> <span class="mf">0.6</span><span class="p">),</span>  <span class="c1"># Scale to 40-100% range (embedding is first 40%)</span>
+                    <span class="n">status_msg</span>
+                <span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error updating progress UI: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="c1"># ...</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Status Text (<code>ft.Text</code>)</strong>: Provides textual updates on the current operation (e.g., "Initializing...", "Downloading models...", "Loading LLM...").
+    <div class="highlight"><pre><span></span><code>    <span class="c1"># Snippet from main function in Drift_mini.py</span>
+    <span class="n">status_text</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Initializing...&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+    <span class="c1"># ...</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">([</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span>
+                <span class="n">src</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;data:image/png;base64,</span><span class="si">{</span><span class="n">icon_base64</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>
+                <span class="n">height</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>
+                <span class="n">fit</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">ImageFit</span><span class="o">.</span><span class="n">COVER</span>
+            <span class="p">),</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">16</span><span class="p">),</span>
+            <span class="n">status_text</span><span class="p">,</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">16</span><span class="p">),</span>
+            <span class="n">progress_bar</span>
+        <span class="p">]),</span>
+        <span class="n">alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">alignment</span><span class="o">.</span><span class="n">center</span><span class="p">,</span>
+        <span class="n">expand</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">))</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Error Messages</strong>: If model download or initialization fails, a clear error message is displayed to the user.
+        <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from main function in Drift_mini.py</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">success</span><span class="p">:</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;❌ Model download failed. Please check your connection.&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">),</span>
+        <span class="n">alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">alignment</span><span class="o">.</span><span class="n">center</span><span class="p">,</span>
+        <span class="n">expand</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">))</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+    <span class="k">return</span>
+<span class="c1"># ...</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">success</span><span class="p">:</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;❌ Failed to initialize. Check models or logs.&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">),</span>
+        <span class="n">alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">alignment</span><span class="o">.</span><span class="n">center</span><span class="p">,</span>
+        <span class="n">expand</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">))</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+    <span class="k">return</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="82-main-chat-interface">8.2. Main Chat Interface<a class="headerlink" href="#82-main-chat-interface" title="Permanent link">&para;</a></h3>
+<p>Once initialized, the user is presented with the main chat interface, which facilitates interaction with the Lexi AI.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li>
+<p><strong>App Bar (<code>ft.AppBar</code> or <code>ft.Container</code> acting as one)</strong>: Located at the top, it contains the application title, status indicators, and action buttons.</p>
+<ul>
+<li><strong>Lexi Icon and Title</strong>: Displays the Lexi logo (Base64 encoded) and the application name.</li>
+<li><strong>Model Status Indicator (<code>ft.Text</code>)</strong>: Shows which model is currently loaded (e.g., "Optimal Model Selected").</li>
+<li><strong>Model Selection Button (<code>ft.IconButton</code>)</strong>: Triggers a dialog for the user to select a different AI model.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from app_bar creation in Drift_mini.py</span>
+<span class="n">app_bar</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+    <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">IconButton</span><span class="p">(</span>
+            <span class="n">icon</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">icons</span><span class="o">.</span><span class="n">MENU</span><span class="p">,</span>
+            <span class="n">icon_color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+            <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">page</span><span class="o">.</span><span class="n">go</span><span class="p">(</span><span class="s2">&quot;/settings&quot;</span><span class="p">),</span> <span class="c1"># Example navigation</span>
+        <span class="p">),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">12</span><span class="p">),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">([</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span>
+                <span class="s2">&quot;Lexi Drift&quot;</span><span class="p">,</span>
+                <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+                <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                <span class="n">weight</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">FontWeight</span><span class="o">.</span><span class="n">BOLD</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span>
+                <span class="s2">&quot;Optimal Model Selected&quot;</span><span class="p">,</span> <span class="c1"># This text changes based on model status</span>
+                <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#BDBDBD&quot;</span><span class="p">,</span>
+                <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="p">),</span>
+        <span class="p">]),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> 
+        <span class="n">ft</span><span class="o">.</span><span class="n">TextButton</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span>
+                <span class="n">ft</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">ft</span><span class="o">.</span><span class="n">icons</span><span class="o">.</span><span class="n">SETTINGS</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">),</span>
+                <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Models&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">),</span>
+            <span class="p">]),</span>
+            <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">open_model_dialog</span><span class="p">(),</span>
+        <span class="p">),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">IconButton</span><span class="p">(</span>
+            <span class="n">icon</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">icons</span><span class="o">.</span><span class="n">INFO_OUTLINE</span><span class="p">,</span>
+            <span class="n">icon_color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+            <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">open_info_dialog</span><span class="p">(),</span>
+        <span class="p">),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">IconButton</span><span class="p">(</span>
+            <span class="n">icon</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">icons</span><span class="o">.</span><span class="n">FILE_UPLOAD</span><span class="p">,</span>
+            <span class="n">icon_color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+            <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">file_picker</span><span class="o">.</span><span class="n">pick_files</span><span class="p">(</span><span class="n">allow_multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+        <span class="p">),</span>
+    <span class="p">]),</span>
+    <span class="n">padding</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">padding</span><span class="o">.</span><span class="n">only</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;#202020&quot;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="n">page</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div></li>
+<li><strong>Info Button (<code>ft.IconButton</code>)</strong>: Displays information about the application or current model.</li>
+<li><strong>File Upload Button (<code>ft.IconButton</code>)</strong>: Initiates the file picker to allow users to upload documents (e.g., PDFs) for processing.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from file picker setup in Drift_mini.py</span>
+<span class="n">file_picker</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">FilePicker</span><span class="p">(</span>
+    <span class="n">on_result</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">on_file_picked</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="n">input_field</span><span class="p">,</span> <span class="n">send_button</span><span class="p">,</span> <span class="n">typing_indicator</span><span class="p">,</span> <span class="n">info_card</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">page</span><span class="o">.</span><span class="n">overlay</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">file_picker</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Chat History Area (<code>ft.Column</code>)</strong>: This is the main display area where conversational turns (user queries and Lexi's responses) are rendered.</p>
+<ul>
+<li><strong>User Messages</strong>: Displayed with a distinct background and alignment (e.g., right-aligned).</li>
+<li><strong>Lexi Messages</strong>: Displayed with a distinct background and alignment (e.g., left-aligned), often accompanied by the Lexi avatar.</li>
+<li><strong>Code Highlighting</strong>: Lexi can generate code, which is then highlighted using Pygments for readability.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from message rendering in Drift_mini.py</span>
+<span class="c1"># ... inside a function that adds messages to chat_column</span>
+<span class="k">if</span> <span class="n">is_user</span><span class="p">:</span>
+    <span class="n">bubble</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">),</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;#4A4A4A&quot;</span><span class="p">,</span>
+        <span class="n">border_radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">msg_widget</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span><span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">bubble</span><span class="p">],</span> <span class="n">alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">MainAxisAlignment</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># ... Lexi avatar logic ...</span>
+    <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;```&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">message</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;```&quot;</span><span class="p">):</span>
+        <span class="c1"># Code block, apply highlighting</span>
+        <span class="n">lang_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;```(\w+)?\n&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="n">lang</span> <span class="o">=</span> <span class="n">lang_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">lang_match</span> <span class="k">else</span> <span class="s2">&quot;text&quot;</span>
+        <span class="n">code_content</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="n">lang_match</span><span class="o">.</span><span class="n">end</span><span class="p">():</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">highlighted_spans</span> <span class="o">=</span> <span class="n">highlight_code_multilang</span><span class="p">(</span><span class="n">code_content</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+        <span class="n">bubble_content</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">([</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Lexi:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">FontWeight</span><span class="o">.</span><span class="n">BOLD</span><span class="p">),</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">highlighted_spans</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bubble_content</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">)</span>
+
+    <span class="n">bubble</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">bubble_content</span><span class="p">,</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;#333333&quot;</span><span class="p">,</span>
+        <span class="n">border_radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">msg_widget</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span><span class="n">avatar</span><span class="p">,</span> <span class="n">bubble</span><span class="p">],</span> <span class="n">alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">MainAxisAlignment</span><span class="o">.</span><span class="n">START</span><span class="p">)</span>
+<span class="n">chat_column</span><span class="o">.</span><span class="n">controls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">msg_widget</span><span class="p">)</span>
+<span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Typing Indicator (<code>ft.Container</code> with <code>ft.Text</code>)</strong>: Appears when Lexi is generating a response, providing visual cues that the AI is processing.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from typing indicator in Drift_mini.py</span>
+<span class="n">typing_indicator</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span>
+    <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">ProgressRing</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">stroke_width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+        <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Lexi is typing...&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#BDBDBD&quot;</span><span class="p">),</span>
+    <span class="p">]),</span>
+    <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># Initially hidden</span>
+<span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>PDF Processing Indicator</strong>: When a PDF is uploaded and processed, a message indicates the status (e.g., "Processing PDF...").</p>
+</li>
+</ul>
+<h3 id="83-input-area">8.3. Input Area<a class="headerlink" href="#83-input-area" title="Permanent link">&para;</a></h3>
+<p>At the bottom of the main chat interface, the input area allows users to type their queries and send them to Lexi.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li>
+<p><strong>Text Input Field (<code>ft.TextField</code>)</strong>: Where the user types their message. It supports multiline input and has a hint text.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from input_field creation in Drift_mini.py</span>
+<span class="n">input_field</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span>
+    <span class="n">hint_text</span><span class="o">=</span><span class="s2">&quot;Type your message...&quot;</span><span class="p">,</span>
+    <span class="n">hint_style</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">TextStyle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;#BDBDBD&quot;</span><span class="p">),</span>
+    <span class="n">multiline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">min_lines</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">max_lines</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">border_radius</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+    <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">bgcolor</span><span class="o">=</span><span class="s2">&quot;#333333&quot;</span><span class="p">,</span>
+    <span class="n">border_color</span><span class="o">=</span><span class="s2">&quot;#4A4A4A&quot;</span><span class="p">,</span>
+    <span class="n">text_style</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">TextStyle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">),</span>
+    <span class="n">on_submit</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">send_message</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="n">input_field</span><span class="p">,</span> <span class="n">send_button</span><span class="p">,</span> <span class="n">typing_indicator</span><span class="p">,</span> <span class="n">info_card</span><span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Send Button (<code>ft.IconButton</code>)</strong>: Sends the message typed in the input field to Lexi. It is typically enabled when there is text in the input field.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from send_button creation in Drift_mini.py</span>
+<span class="n">send_button</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">IconButton</span><span class="p">(</span>
+    <span class="n">icon</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">icons</span><span class="o">.</span><span class="n">SEND</span><span class="p">,</span>
+    <span class="n">icon_color</span><span class="o">=</span><span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+    <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">send_message</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="n">input_field</span><span class="p">,</span> <span class="n">send_button</span><span class="p">,</span> <span class="n">typing_indicator</span><span class="p">,</span> <span class="n">info_card</span><span class="p">),</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># Initially disabled</span>
+<span class="p">)</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="84-model-selection-dialog">8.4. Model Selection Dialog<a class="headerlink" href="#84-model-selection-dialog" title="Permanent link">&para;</a></h3>
+<p>This dialog allows users to switch between different AI models available in Lexi. It's typically triggered by a button in the app bar.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li><strong>Dialog (<code>ft.AlertDialog</code>)</strong>: A modal overlay that presents model options.</li>
+<li><strong>Model List (<code>ft.Column</code> of <code>ft.Row</code>s)</strong>: Each row represents a model, showing its name, description, and a button to select it.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from open_model_dialog function in Drift_mini.py</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">open_model_dialog</span><span class="p">():</span>
+    <span class="n">model_options</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;Lexi Lite&quot;</span><span class="p">,</span> <span class="s2">&quot;Smaller, faster model for quick responses.&quot;</span><span class="p">,</span> <span class="s2">&quot;phi-1_5-gguf-4bit&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Lexi Core&quot;</span><span class="p">,</span> <span class="s2">&quot;Balanced model for general tasks.&quot;</span><span class="p">,</span> <span class="s2">&quot;phi-2-gguf-4bit&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Lexi Edge&quot;</span><span class="p">,</span> <span class="s2">&quot;Advanced model for complex queries.&quot;</span><span class="p">,</span> <span class="s2">&quot;phi-3-mini-4k-instruct&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Lexi Ultra&quot;</span><span class="p">,</span> <span class="s2">&quot;Largest model for maximum capability.&quot;</span><span class="p">,</span> <span class="s2">&quot;deepseek-llm-7b-chat-gguf-q4&quot;</span><span class="p">)</span>
+    <span class="p">]</span>
+
+    <span class="n">model_controls</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">model_folder</span> <span class="ow">in</span> <span class="n">model_options</span><span class="p">:</span>
+        <span class="n">model_controls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">Row</span><span class="p">([</span>
+                <span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">([</span>
+                    <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">FontWeight</span><span class="o">.</span><span class="n">W_500</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">),</span>
+                    <span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">description</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#BDBDBD&quot;</span><span class="p">),</span>
+                <span class="p">]),</span>
+                <span class="n">ft</span><span class="o">.</span><span class="n">Container</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                <span class="n">ft</span><span class="o">.</span><span class="n">TextButton</span><span class="p">(</span>
+                    <span class="s2">&quot;Select&quot;</span><span class="p">,</span>
+                    <span class="n">on_click</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">select_model</span><span class="p">,</span> <span class="n">model_folder</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span>
+                <span class="p">),</span>
+            <span class="p">])</span>
+        <span class="p">)</span>
+
+    <span class="n">dialog</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">AlertDialog</span><span class="p">(</span>
+        <span class="n">modal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s2">&quot;Available Models&quot;</span><span class="p">),</span>
+        <span class="n">content</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span>
+            <span class="n">model_controls</span><span class="p">,</span>
+            <span class="n">scroll</span><span class="o">=</span><span class="s2">&quot;always&quot;</span><span class="p">,</span>
+            <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">actions</span><span class="o">=</span><span class="p">[</span>
+            <span class="n">ft</span><span class="o">.</span><span class="n">TextButton</span><span class="p">(</span><span class="s2">&quot;Close&quot;</span><span class="p">,</span> <span class="n">on_click</span><span class="o">=</span><span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="n">close_dialog</span><span class="p">()),</span>
+        <span class="p">],</span>
+        <span class="n">actions_alignment</span><span class="o">=</span><span class="n">ft</span><span class="o">.</span><span class="n">MainAxisAlignment</span><span class="o">.</span><span class="n">END</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">dialog</span> <span class="o">=</span> <span class="n">dialog</span>
+    <span class="n">dialog</span><span class="o">.</span><span class="n">open</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div></li>
+<li><strong>Disclaimer</strong>: Warns users about potential crashes when switching models.</li>
+<li><strong>Close Button</strong>: Closes the dialog.</li>
+</ul>
+<h3 id="85-information-dialog">8.5. Information Dialog<a class="headerlink" href="#85-information-dialog" title="Permanent link">&para;</a></h3>
+<p>This dialog provides general information about Lexi, potentially including version details, credits, or links to documentation.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li><strong>Dialog (<code>ft.AlertDialog</code>)</strong>: A modal overlay for displaying information.</li>
+<li><strong>Content (<code>ft.Text</code>)</strong>: Displays the informational text.</li>
+<li><strong>Close Button</strong>: Closes the dialog.</li>
+</ul>
+<h3 id="86-pdf-upload-and-processing">8.6. PDF Upload and Processing<a class="headerlink" href="#86-pdf-upload-and-processing" title="Permanent link">&para;</a></h3>
+<p>Lexi allows users to upload PDF documents, which are then processed to extract text and create embeddings for conversational context.</p>
+<p><strong>Key Components &amp; Functionality:</strong></p>
+<ul>
+<li><strong>File Picker (<code>ft.FilePicker</code>)</strong>: A non-visual control that interacts with the operating system to allow users to select files. Its <code>on_result</code> event handler processes the selected files.
+    <div class="highlight"><pre><span></span><code><span class="c1"># Snippet from on_file_picked function in Drift_mini.py</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_file_picked</span><span class="p">(</span><span class="n">e</span><span class="p">:</span> <span class="n">ft</span><span class="o">.</span><span class="n">FilePickerResultEvent</span><span class="p">,</span> <span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="n">input_field</span><span class="p">,</span> <span class="n">send_button</span><span class="p">,</span> <span class="n">typing_indicator</span><span class="p">,</span> <span class="n">info_card</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">files</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">files</span><span class="p">:</span>
+            <span class="c1"># Display message that PDF is being processed</span>
+            <span class="n">add_message</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Processing PDF: </span><span class="si">{</span><span class="n">file</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">is_user</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+            <span class="c1"># Simulate processing time or actual processing</span>
+            <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> 
+
+            <span class="c1"># Actual PDF processing logic (simplified for snippet)</span>
+            <span class="n">pdf_path</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">path</span>
+            <span class="k">if</span> <span class="n">pdf_path</span><span class="p">:</span>
+                <span class="c1"># ... (PDF loading, splitting, embedding logic)</span>
+                <span class="n">add_message</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;PDF &#39;</span><span class="si">{</span><span class="n">file</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39; processed and ready for questions!&quot;</span><span class="p">,</span> <span class="n">is_user</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">add_message</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">chat_column</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Failed to load PDF &#39;</span><span class="si">{</span><span class="n">file</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">,</span> <span class="n">is_user</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">page</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div></li>
+<li><strong>Status Messages in Chat</strong>: Messages are added to the chat history to inform the user about the PDF processing status (e.g., "Processing PDF: ...", "PDF processed...").</li>
+</ul>
+<p>When making changes or adding new features, always consider the existing structure and design principles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
